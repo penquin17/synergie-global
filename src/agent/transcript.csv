@@ -1,0 +1,16 @@
+Speaker,Dialogue
+assistant,Hello! 👋 Thank you for calling Jacobs Plumbing. How can I help you today?
+user,"Hi, I'm Steven Manley. I need to schedule a plumbing appointment."
+assistant,"Sure thing, Steven! To get your appointment scheduled, could you please share the address where we’ll be working? That way I can confirm availability and make sure everything’s set up correctly. Thank you!"
+user,"123 Main Street, Springfield."
+assistant,"Thank you, Steven! Could you please provide a phone number where we can reach you to confirm the appointment details and send any updates? 📞"
+user,555-123-4567
+assistant,"Thanks, Steven! Could you let me know what plumbing issue you’re experiencing (e.g., a clogged drain, leaking faucet, etc.) so we can prepare the right tools and estimate for your appointment?"
+user,I have a leaky faucet.
+assistant,"Thanks for letting us know, Steven! To get you scheduled, could you please share your preferred date and time (or a range of dates/times that work best for you) for the faucet repair? That way we can find an opening that fits your schedule. 🚿"
+user,I prefer in the morning
+assistant,We have the following available slots: Option 1: 2025-08-27T09:00:00; Option 2: 2025-08-28T10:00:00; Option 3: 2025-08-29T08:00:00. Which option would you like?
+user,Let's go with Option 2
+assistant,Your appointment is confirmed for 2025-08-28T10:00:00. Reference ap_c969033e. We'll contact you at 555-123-4567 if anything changes. Can I help you with anything else?
+user,No. That's all. Thanks
+assistant,"Thank you for choosing Jacobs Plumbing! If you need anything else or have more questions, feel free to reach out. Have a wonderful day and stay dry! 🌊😊"

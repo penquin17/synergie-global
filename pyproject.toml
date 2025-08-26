@@ -1,0 +1,54 @@
+[project]
+name = "agent"
+version = "0.0.1"
+description = "SynergieGlobal AI Engineering Test"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain",
+    "langchain-openai",
+    "langgraph",
+    "openai",
+    "tiktoken",
+]
+authors = [{ name = "penquin17", email = "nquang.17@gmail.com" }]
+
+[project.optional-dependencies]
+develop = ["ipykernel", "ruff", "mypy", "black"]
+test = ["pytest", "pytest-cov"]
+
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools>=61.0"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+exclude = ["tests", "tests.*"]
+include = ["agent", "agent.*"]
+
+[tool.ruff]
+target-version = "py312"
+# Same as Black.
+line-length = 88
+
+[tool.ruff.lint]
+# E/W: pycodestyle, F: Pyflakes, I: isort, B: flake8-bugbear, UP: pyupgrade, C: flake8-comprehensions
+ignore = ["E501"]
+select = ["E", "W", "F", "I", "B", "UP", "C"]
+
+[tool.ruff.format]
+# Black-compatible formatting. This section can be left empty to use ruff's defaults.
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+warn_return_any = true
+warn_unused_ignores = true
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "--cov=agent --cov-report=xml"
+testpaths = ["tests"]
