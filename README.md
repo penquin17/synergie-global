@@ -3,7 +3,7 @@
 prerequisite: conda
 
 ```bash
-cd synergie-test
+cd synergie-global
 conda create -y -n synergie python=3.12
 conda install -y -n synergie -c conda-forge conda-build cython pip sqlite uv poetry
 conda install -y -n synergie -c conda-forge c-compiler cxx-compiler
@@ -14,12 +14,12 @@ conda run -v -n synergie uv pip install -e ".[develop]"
 
 ## Information
 
-- Demo Transcript: Available at synergie-test/src/agent/transcript.csv.
+- Demo Transcript: Available at synergie-global/src/agent/transcript.csv.
 - Run Demo: Execute with
 
   ```bash
   conda activate synergie
-  python synergie-test/src/agent/demo.py
+  python synergie-global/src/agent/demo.py
   ```
 
 - Features
